@@ -1,4 +1,6 @@
 # bigtoken-bot
+[![Github All Releases](https://img.shields.io/github/downloads/ilyasafr/bigtoken-bot/total.svg)]()
+
 BIGtoken BOT Register With Referral + Verified Email
 
 ## Install
