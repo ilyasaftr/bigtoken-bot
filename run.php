@@ -54,7 +54,7 @@ ulang_email:
 sleep(10);
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://froidcode.com/api/bigtoken/get_email3.php?email=$email");
+curl_setopt($ch, CURLOPT_URL, "https://froidcode.com/api/bigtoken/get_email.php?email=$email");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -69,7 +69,7 @@ $get_email = json_decode($result);
 
 
 if($get_email->content == "Email belum masuk"){
-    echo "[$i] Email belum masuk, memeriksa email ulang... | $email";
+    echo "[$i] Email belum masuk, memeriksa email ulang...";
     echo "\r\n";
     goto ulang_email;
 }
